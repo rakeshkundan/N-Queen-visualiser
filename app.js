@@ -68,7 +68,7 @@ function matrix(m, n) {
 app.get('/',function(req,res){
     res.render("index",{n:0,flag:false});
 });
-app.post("/queencount",(req,res)=>{
+app.post("/",(req,res)=>{
     N=req.body.queen;
     let bs=req.body.boardSize;
     var row=[];
