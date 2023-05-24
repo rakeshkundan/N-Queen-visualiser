@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top" style="z-index: 999;">
+        <form action="/queencount" style="display: flex; justify-content: center; align-items: center;" method="post">
+            <label for="queen">Enter the number of Queen:</label>
+            <input type="text" name="queen" id="" style="height: auto; background-color: transparent; border: solid rgb(175, 107, 5) .2em; border-radius: 2px; ">
+            <button type="submit" style="height: auto; background-color: transparent; border: solid rgb(175, 107, 5) .2em; border-radius: 2px; margin-left: 2em; font-size: .7em;">submit</button>
+        </form>
+    </div>
+    <%if(flag){%>
+        <p style=" width:100%; font-family: Comic Sans ms;display: flex; align-items: center;justify-content: center;background-color: chartreuse; color: while;font-size: larger; padding: .2em;">Not possible to place</p>
+    <%}%>
+    <div class="container">
+        
+        <div class="main">
+            
+
+            <% for(let i=0;i<n;i++){%>
+                <div class="row">
+                <%for(let j=0;j<n;j++){%>
+                    
+                    <%if(mats[i][j]==1){%>
+                    <div class="box"><img style="height: 70%;" src="queenico.ico" alt="Q"></div>
+                    <%}%> 
+                    <%if(mats[i][j]==0){%>
+                        <div class="box"></div>
+                     <%}%>   
+                    
+                <%}%>
+                </div>
+            <%}%>
+        </div>
+        
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
