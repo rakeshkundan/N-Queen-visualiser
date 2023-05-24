@@ -85,10 +85,7 @@ app.post("/",(req,res)=>{
         res.render("index",{mats:board,n:N,flag:false});
      else{
         res.render("index",{mats:board,n:N,flag:true});
-     }   
-
-    
-   
+     } 
 });
 
 
