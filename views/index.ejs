@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top" style="z-index: 999;">
+    <div class="top" style="position: absolute;z-index: 999; width: 100vw;">
         <form action="/" style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;" method="post">
             <label for="queen">Enter the number of Queen:</label>
             <input type="text" name="queen" id="" style="height: auto; background-color: transparent; border: solid rgb(175, 107, 5) .2em; border-radius: 2px; ">
@@ -18,7 +18,7 @@
     <%if(flag){%>
         <p style=" width:100%; font-family: Comic Sans ms;display: flex; align-items: center;justify-content: center;background-color: chartreuse; color: while;font-size: larger; padding: .2em;">Not possible to place</p>
     <%}%>
-    <div class="container">
+    <div class="container" style="position:relative; width: 100vw;">
         
         <div class="main">
             
